@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Calculadora Impuestos</string>
+    <string name="app_name_ver">Calculadora de Impuestos %1$s</string>
+    <string name="preference_file_key">com.mozama.impuestos</string>
+    <string name="copyright">© Mozama 2021–2023</string>
+
+    <string name="retenciones">RSP</string>
+    <string name="resico">RESICO</string>
+    <string name="iva">IVA</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="total">TOTAL</string>
+    <string name="isr_r">ISR Retenido</string>
+    <string name="iva_r">IVA Retenido</string>
+    <string name="uma_smg">UMA-SMG</string>
+    <string name="uma">UMA</string>
+    <string name="smg">Salarío Mínimo General</string>
+    <string name="Cedular">Cedular</string>
+    <string name="unidad_ma">Unidad de Medida y Actualización</string>
+    <string name="eq_pesos">Equivalencia en pesos</string>
+
+    <string name="limpiar">Limpiar</string>
+    <string name="compartir">Compartir</string>
+    <string name="mas_herramientas">Más herramientas</string>
+    <string name="calificar">Calificar aplicación</string>
+    <string name="compartir_app">Compartir aplicación</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="principal">principal</string>
+    <string name="imp_locales">Impuestos locales</string>
+    <string name="imp_cedulares">Impuestos cedulares u otros</string>
+    <string name="imp_config">IMP_LOCALES</string>
+    <string name="verifica_cedular">Igrese el porcentaje del impuesto</string>
+    <string name="rfc">RFC</string>
+    <string name="persona_fisica">Persona Física</string>
+    <string name="persona_moral">Persona Moral</string>
+    <string name="primer_nombre">Nombre(s)</string>
+    <string name="segundo_nombre">Segundo Nombre</string>
+    <string name="primer_apellido">Primer Apellido</string>
+    <string name="segundo_apellido">Segundo Apellido</string>
+    <string name="fecha_nacimiento">Fecha Nacimiento</string>
+
+    <string name="nombre_moral">Denominación/Razón Social</string>
+    <string name="fecha_constitucion">Fecha Constitución</string>
+    <string name="info_faltante">Ingrese valor</string>
+    <string name="aviso_rfc">Sólo la Secretaría de Hacienda y Crédito Público, a través del Servicio de Administración Tributaria, es la única instancia que oficialmente asigna las claves de RFC a los contribuyentes que así lo soliciten, a partir de la aplicación de este procedimiento a la base de datos del Padrón de Contribuyentes, con la finalidad de identificar homonimias y evitar la duplicidad de registros.</string>
+
+    <string name="hexatext">Cifrado HexaText</string>
+    <string name="trigonometria">📐 Calculadora Trigonométrica</string>
+    <string name="recta">📏 Línea Recta</string>
+    <string name="mcm">Calcula MCM MCD</string>
+    <string name="productos_notables">Productos Notables Álgebra</string>
+
+    <string name="salario_info">Salario Mínimo en la Zona Libre de la Frontera Norte (ZLFN): \n\n $%1$s \n\nSalarío Mínimo General resto del país: \n\n $%2$s \n\nVigencia: 01 ene 2023</string>
+    <string name="uma_info">Referencia en pesos para determinar la cuantía del pago de obligaciones previstas en las leyes federales, como multas o impuestos. \n \nValor de UMA diario 2022: \n\n $%1$s</string>
+    <string name="retencion_info">Si eres persona física con actividad empresarial - profesional y emites factura a una persona moral. \n \nNota: valor de la tasa del ISR retenido: 0.106667 </string>
+    <string name="resico_info">Si eres persona física en el Régimen Simplificado de Confianza, RESICO y emites factura a una Persona Moral (con retención de IVA) o a una Persona Física (sin retención de IVA). \n \nNota: valor de la tasa del ISR retenido: %1$s </string>
+    <string name="iva_info">Si eres persona física y emites factura a otra persona física. </string>
+    <string name="titulo_dialog">Utiliza esta sección</string>
+
+    <string name="app_version">v3.14</string>
+
+    <string name="ads_id_app">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="ads_retenciones">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ads_iva">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ads_uma">ca-app-pub-3940256099942544/6300978111</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

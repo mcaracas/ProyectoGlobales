@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/calificar"
+        android:title="@string/calificar" />
+    <item android:id="@+id/comparirApp"
+        android:title="@string/compartir_app" />
+    <item android:title="@string/mas_herramientas" >
+        <!-- "file" submenu -->
+        <menu>
+            <item android:id="@+id/menu_hexa"
+                android:title="@string/hexatext" />
+            <item android:id="@+id/menu_recta"
+                android:title="@string/recta" />
+            <item android:id="@+id/menu_trigonometria"
+                android:title="@string/trigonometria" />
+        </menu>
+    </item>
+</menu>

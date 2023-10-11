@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.UmaFragment">
+
+    <ScrollView
+        android:layout_marginBottom="@dimen/banner_h"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="@dimen/margin_double"
+            android:padding="@dimen/margin_double">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_fragment"
+                android:layout_marginStart="@dimen/margin_min"
+                android:hint="@string/uma">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtUma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:textSize="@dimen/sp_3"
+                    android:maxLength="21"
+                    android:gravity="end"
+                    android:inputType="numberDecimal"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_fragment"
+                android:layout_marginStart="@dimen/margin_min"
+                app:startIconDrawable="@drawable/ic_dollar"
+                android:hint="@string/eq_pesos">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtPesos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:textSize="@dimen/sp_1"
+                    android:maxLength="21"
+                    android:gravity="end"
+                    android:inputType="numberDecimal"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageView
+                android:id="@+id/icInfo"
+                android:layout_gravity="end"
+                android:layout_marginVertical="@dimen/margin_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_info" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="@dimen/margin_double"
+                android:background="?android:attr/listDivider" />
+
+<!--Salario minimo-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_fragment"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinSalario"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_min"
+                    android:spinnerMode="dialog"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_min"
+                    android:hint="@string/smg">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtSalario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:textSize="@dimen/sp_3"
+                        android:maxLength="21"
+                        android:gravity="end"
+                        android:inputType="numberDecimal"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_fragment"
+                android:layout_marginStart="@dimen/margin_min"
+                app:startIconDrawable="@drawable/ic_dollar"
+                android:hint="@string/eq_pesos">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtPesosSmg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:textSize="@dimen/sp_1"
+                    android:maxLength="21"
+                    android:gravity="end"
+                    android:inputType="numberDecimal"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageView
+                android:id="@+id/icInfoSalario"
+                android:layout_gravity="end"
+                android:layout_marginVertical="@dimen/margin_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_info" />
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/adUma"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        ads:adSize="BANNER"-->
+<!--        ads:adUnitId="@string/ads_uma">-->
+<!--    </com.google.android.gms.ads.AdView>-->
+</RelativeLayout>

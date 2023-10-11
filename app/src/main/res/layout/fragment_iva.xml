@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.IvaFragment">
+    
+    <ScrollView
+        android:layout_marginBottom="@dimen/banner_h"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_double"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_fragment"
+                app:startIconDrawable="@drawable/ic_dollar"
+                android:hint="@string/subtotal">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtSubtotalI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:textSize="@dimen/sp_2"
+                    android:gravity="end"
+                    android:maxLength="15"
+                    android:inputType="numberDecimal"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_fragment"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinIvaI"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_min"
+                    android:spinnerMode="dialog"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_min"
+                    app:startIconDrawable="@drawable/ic_dollar"
+                    android:hint="@string/iva">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtIvaI"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:textSize="@dimen/sp_3"
+                        android:maxLength="21"
+                        android:gravity="end"
+                        android:inputType="numberDecimal"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+<!--cedular-->
+            <LinearLayout
+                android:id="@+id/lyCedularI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_fragment"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinCedularI"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_min"
+                    android:spinnerMode="dialog"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/fieldPercentCedularI"
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_min"
+                    android:layout_marginEnd="@dimen/margin_min"
+                    android:hint="%">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtPercentCedularI"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:textSize="@dimen/sp_3"
+                        android:maxLength="5"
+                        android:gravity="end"
+                        android:inputType="numberDecimal"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/fieldCedularI"
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_min"
+                    app:startIconDrawable="@drawable/ic_dollar"
+                    android:hint="@string/Cedular">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtCedular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:textSize="@dimen/sp_3"
+                        android:maxLength="21"
+                        android:gravity="end"
+                        android:focusable="false"
+                        android:inputType="none"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_fragment"
+                app:startIconDrawable="@drawable/ic_dollar"
+                android:hint="@string/total">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtTotalI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:gravity="end"
+                    android:textSize="@dimen/sp_1"
+                    android:maxLength="22"
+                    android:inputType="numberDecimal"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/icInfoIva"
+                android:layout_gravity="end"
+                android:layout_marginVertical="@dimen/margin_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_info" />
+
+        </LinearLayout>
+    </ScrollView>
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/adIva"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        ads:adSize="BANNER"-->
+<!--        ads:adUnitId= "@string/ads_iva">-->
+<!--    </com.google.android.gms.ads.AdView>-->
+
+</RelativeLayout>

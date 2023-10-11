@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AjustesFragment">
+
+    <ScrollView
+        android:layout_marginBottom="@dimen/banner_h"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_double">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_double"
+                android:text="@string/imp_locales"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="?android:attr/textColorSecondary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_double"
+                android:orientation="horizontal">
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchLocal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_double"
+                    android:checked="false"
+                    android:paddingVertical="@dimen/margin_double"
+                    android:text="@string/imp_cedulares"
+                    android:textSize="@dimen/sp_4" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/margin_double"
+                android:layout_marginTop="@dimen/margin_fragment"
+                android:background="?android:attr/listDivider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_double"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/gray"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/gray"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:text="@string/copyright" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/adAjustes"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        ads:adSize="BANNER"-->
+<!--        ads:adUnitId= "@string/ads_uma">-->
+<!--    </com.google.android.gms.ads.AdView>-->
+
+
+</RelativeLayout>

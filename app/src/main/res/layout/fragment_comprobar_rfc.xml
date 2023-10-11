@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ComprobarRFCFragment">
+
+    <ScrollView
+        android:layout_marginBottom="@dimen/banner_h"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_double">
+
+            <RadioGroup
+                android:id="@+id/groupTipoPersona"
+                android:checkedButton="@+id/radio_button_1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rdoFisica"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/persona_fisica"/>
+            <RadioButton
+                android:id="@+id/rdoMoral"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/persona_moral"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/layoutFisica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/fielPrimerNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_fragment"
+                    android:hint="@string/primer_nombre">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtPrimerNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:textSize="@dimen/sp_2"
+                        android:gravity="start"
+                        android:inputType="textCapWords"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/fielPrimerApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_fragment"
+                    android:hint="@string/primer_apellido">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtPrimerApellido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:textSize="@dimen/sp_2"
+                        android:gravity="start"
+                        android:inputType="textCapWords"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/fielSegundoApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_fragment"
+                    android:hint="@string/segundo_apellido">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtSegundoApellido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:textSize="@dimen/sp_2"
+                        android:gravity="start"
+                        android:inputType="textCapWords"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutMoral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/fielNombreMoral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_fragment"
+                    android:hint="@string/nombre_moral">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtNombreMoral"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:textSize="@dimen/sp_2"
+                        android:gravity="start"
+                        android:inputType="textCapWords"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/fielFecha"
+                android:layout_marginVertical="@dimen/margin_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fecha_nacimiento">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:inputType="date"
+                    android:imeOptions="actionGo"
+                     />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvRFC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/margin_double"
+                android:text="RFC"
+                android:textAppearance="?attr/textAppearanceHeadline4"
+                android:textColor="?android:attr/textColorSecondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/margin_double"
+                android:text="@string/aviso_rfc"
+                 />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

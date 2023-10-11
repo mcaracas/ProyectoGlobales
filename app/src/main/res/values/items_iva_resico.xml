@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="item_iva_resico">
+        <item>Retención IVA receptor Persona Moral</item>
+        <item>Sin retn. IVA receptor Persona Física</item>
+    </string-array>
+</resources>

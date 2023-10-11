@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="item_iva">
+        <item>16% IVA</item>
+        <item>8% IVA</item>
+    </string-array>
+
+</resources>

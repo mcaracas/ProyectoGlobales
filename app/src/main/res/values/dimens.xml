@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_fragment">8dp</dimen>
+    <dimen name="margin_double">16dp</dimen>
+    <dimen name="margin_min">4dp</dimen>
+
+    <dimen name="sp_1">20sp</dimen>
+    <dimen name="sp_2">18sp</dimen>
+    <dimen name="sp_3">15sp</dimen>
+    <dimen name="sp_4">16sp</dimen>
+
+    <dimen name="banner_h">64dp</dimen>
+</resources>
