@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.josketres:rfcfacil:2.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.josketres/rfcfacil/2.0.2/e2c0388fa0d3b4ae642e3f014ca59f17aa9e5ea8/rfcfacil-2.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.josketres/rfcfacil/2.0.2/e88df5cd85f1608218a49439679361652785e4ff/rfcfacil-2.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.josketres/rfcfacil/2.0.2/fd4fbcc000927310fa0daa670b2c6d6e9f32892a/rfcfacil-2.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
