@@ -26,7 +26,7 @@
                 android:layout_marginVertical="@dimen/margin_fragment"
                 android:hint="@string/subtotal">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/txtSubtotalResico"
+                    android:id="@+id/txtMontoHacienda"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:imeOptions="actionDone"
@@ -44,7 +44,7 @@
                 android:layout_marginVertical="@dimen/margin_fragment"
                 android:orientation="horizontal">
                 <Spinner
-                    android:id="@+id/spinIvaResico"
+                    android:id="@+id/spinITipoIVAVentas"
                     style="@style/Widget.AppCompat.Spinner.Underlined"
                     android:layout_width="0dp"
                     android:layout_weight=".4"
@@ -96,7 +96,7 @@
                     android:layout_marginStart="@dimen/margin_min"
                     android:hint="@string/isr_r">
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/txtIsrResico"
+                        android:id="@+id/txtMontoCompras"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:imeOptions="actionDone"
@@ -115,7 +115,7 @@
             android:layout_marginVertical="@dimen/margin_fragment"
             android:orientation="horizontal">
             <Spinner
-                android:id="@+id/spinIVARResico"
+                android:id="@+id/spinTipoIVA"
                 style="@style/Widget.AppCompat.Spinner.Underlined"
                 android:layout_width="0dp"
                 android:layout_weight=".4"
@@ -211,7 +211,7 @@
                 android:layout_marginVertical="@dimen/margin_fragment"
                 android:hint="@string/total">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/txtTotalResico"
+                    android:id="@+id/txtMontoVentas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:imeOptions="actionDone"

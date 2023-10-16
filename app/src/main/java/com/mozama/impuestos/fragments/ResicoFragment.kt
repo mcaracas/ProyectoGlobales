@@ -137,13 +137,13 @@ class ResicoFragment : Fragment() {
     private fun setup(view: View){
         fieldIva = view.findViewById(R.id.fieldIvaResico)
 
-        txtSubtotal = view.findViewById(R.id.txtSubtotalResico)
+        txtSubtotal = view.findViewById(R.id.txtMontoHacienda)
         txtIva = view.findViewById(R.id.txtIvaResico)
-        txtIsrR = view.findViewById(R.id.txtIsrResico)
+        txtIsrR = view.findViewById(R.id.txtMontoCompras)
         txtIvaR = view.findViewById(R.id.txtIvaRResico)
-        txtTotal = view.findViewById(R.id.txtTotalResico)
-        spinIva = view.findViewById(R.id.spinIvaResico)
-        spinIvaR = view.findViewById(R.id.spinIVARResico)
+        txtTotal = view.findViewById(R.id.txtMontoVentas)
+        spinIva = view.findViewById(R.id.spinITipoIVAVentas)
+        spinIvaR = view.findViewById(R.id.spinTipoIVA)
         fieldIvaRResico = view.findViewById(R.id.fieldIvaRResico)
         icInfoRetenciones = view.findViewById(R.id.icInfoResico)
 
