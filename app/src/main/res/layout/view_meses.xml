@@ -4,20 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EEE3DF">
+    android:background="#EEE3DF"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:text="Meses"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="288dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#FFFFFF"
+        android:keyboardNavigationCluster="false"
+        android:shadowColor="#000000"
+        android:text="FEBRERO - 2023"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textColorHighlight="#571B1B"
+        android:textColorLink="#CA4242"
+        android:textSize="18sp"
+        app:cornerRadius="30px"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="288dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#FFFFFF"
+        android:keyboardNavigationCluster="false"
+        android:shadowColor="#000000"
+        android:text="MARZO - 2023"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textColorHighlight="#571B1B"
+        android:textColorLink="#CA4242"
+        android:textSize="18sp"
+        app:cornerRadius="30px"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="288dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#FFFFFF"
+        android:keyboardNavigationCluster="false"
+        android:shadowColor="#000000"
+        android:text="ABRIL - 2023"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textColorHighlight="#571B1B"
+        android:textColorLink="#CA4242"
+        android:textSize="18sp"
+        app:cornerRadius="30px"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="235dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="288dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#FFFFFF"
+        android:keyboardNavigationCluster="false"
+        android:shadowColor="#000000"
+        android:text="MAYO - 2023"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textColorHighlight="#571B1B"
+        android:textColorLink="#CA4242"
+        android:textSize="18sp"
+        app:cornerRadius="30px"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="75dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#6D72C3"
+        app:cornerRadius="100px"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="504dp" />
 
     <View
-        android:id="@+id/fondo_rectangulo"
-        android:layout_width="337dp"
-        android:layout_height="593dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="38dp"
-        android:layout_marginBottom="102dp"
+        android:id="@+id/view"
+        android:layout_width="358dp"
+        android:layout_height="600dp"
         android:background="@drawable/border_radius"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:elevation="1dp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <View
+        android:id="@+id/circulo"
+        android:layout_width="530dp"
+        android:layout_height="522dp"
+        android:background="@drawable/circle_shape"
+        android:elevation="0dp"
+        tools:layout_editor_absoluteX="-60dp"
+        tools:layout_editor_absoluteY="321dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
